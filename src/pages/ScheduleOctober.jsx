@@ -9,7 +9,6 @@ import Footer from "../components/Footer/Footer";
 import Modal from "../components/Modal/Modal";
 import LeftContent from "../components/LeftContent/LeftContent";
 import TestComponent from "../components/TestComponent/TestComponent";
-import SpiffyCheckout from "../components/SpiffyCheckout/SpiffyCheckout";
 import CalendarOct from "../components/Calendar/CalendarOct";
 
 export default function ScheduleOctober() {

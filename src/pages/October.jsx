@@ -9,7 +9,6 @@ import Footer from "../components/Footer/Footer";
 import Modal from "../components/Modal/Modal";
 import LeftContent from "../components/LeftContent/LeftContent";
 import TestComponent from "../components/TestComponent/TestComponent";
-import SpiffyCheckout from "../components/SpiffyCheckout/SpiffyCheckout";
 
 export default function October() {
     return (
@@ -46,11 +45,10 @@ export default function October() {
                     <p>(If you’re fortunate enough to be employed right now, please leave these spots for those who are not currently employed. Don’t be that person. Don’t take the seat of someone who really needs this price.)</p>
                 </div>
             </TestComponent >
-            <SpiffyCheckout />
 
-            <Link to="/octoberschedule">OCTOBER SCHEDULE</Link>
+            {/* <Link to="/octoberschedule">OCTOBER SCHEDULE</Link>
             <Link to="/novemberschedule">NOVEMBER SCHEDULE</Link>
-            <Link to="/decemberchedule">DECEMBEr SCHEDULE</Link>
+            <Link to="/decemberchedule">DECEMBEr SCHEDULE</Link> */}
 
             {/* <Calendar />
 // Add component with Buttons here
