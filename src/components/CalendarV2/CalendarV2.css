@@ -1,6 +1,9 @@
-.calendar {
+.calendarV2 {
     display: flex;
     flex-direction: column;
+    /* margin: 0 auto; */
+    /* width: 75%; */
+    /* border: 1px solid red; */
     max-width: 80em;
     margin-top: 1em;
 }
@@ -11,10 +14,12 @@
     background-color: rgb(235, 235, 235);
     border-radius: 10px;
     padding: 20px;
+    /* width: 100%; */
     margin: 5px 0;
 }
 
 .weekInfo {
+    /* padding-left: 45px; */
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -26,6 +31,7 @@
     border-radius: 10px;
     background-color: white;
     padding-left: 10px;
+    /* font-size: 17px; */
     padding: 0.5em 0;
     font-weight: 700;
     line-height: 1.2;
@@ -43,6 +49,7 @@
 
 .scheduleIconImg.rotated {
     transform: rotate(90deg);
+    /* 90-degree rotation */
 }
 
 
@@ -65,15 +72,19 @@
     display: flex;
     border-radius: 10px;
     background-color: white;
-    margin-bottom: 7px;
+    /* font-weight: 700; */
+    margin-bottom: px;
 }
 
 
 .topicDetails {
     display: flex;
     flex-direction: column;
-    padding: 15px 30px 25px;
+    padding: 15px 30px 20px;
+}
 
+.topicDetails p{
+    margin: 5px 0;
 }
 
 
@@ -83,7 +94,7 @@
     align-items: center;
 }
 
-.optionDate {
+.optionTime {
     font-weight: 500;
     padding-right: 20px;
 }
@@ -92,41 +103,36 @@
     font-weight: 700;
 }
 
-.topicDetails>ul,
-.topicDetails>li {
+.topicDetails>ul {
+    line-height: 25px;
+    padding-left: 25px;
+    margin: 0 .5rem 0 0;
+    max-width: 100%;
+    list-style-position: outside;
+}
+
+.topicDetails>ul>li {
+    margin: 5px 0 0 0;
     line-height: 25px;
 }
-
-.topicDetails>ul {
-    padding-left: 10px;
-    margin: 0.5rem;
-}
-
-.topicDetails>li {
-    padding-left: 4em;
-    text-indent: -1.5em;
-    list-style-position: outside;
-    max-width: 100%;
-}
-
-
-
-
-
-
 
 
 
 @media only screen and (max-width: 768px) {
+
+    /* Adjust the width for mobile devices */
     .courseSchedule p,
     li,
     h2 {
         max-width: 100%;
     }
 
-    .calendar {
+    .calendarV2 {
         display: flex;
         flex-direction: column;
+        /* margin: 0 auto; */
+        /* width: 75%; */
+        /* border: 1px solid red; */
         max-width: 80em;
         margin-top: 1em;
     }
@@ -143,6 +149,8 @@
     }
 
     .headerTitle {
+        /* flex-direction: column; */
+        /* align-items: left; */
         font-size: 14px;
         line-height: 1.2rem;
     }
@@ -155,7 +163,7 @@
         padding-left: 2.5em
     }
 
-    .optionDate,
+    .optionTime,
     .optionTitle {
         font-size: 14px;
         line-height: 1.2rem;
@@ -170,18 +178,14 @@
         display: none;
     }
 
-    .topicDetails {
-        padding: 0 .75em .75em .75em;
+    .topicDetails p {
+        font-size: 14px;
+        padding: 0 .75em;
     }
 
     .topicDetails>ul {
-        padding: 0;
-        font-size: 15px;
+        padding: 0 0 0 2em;
+        font-size: 14px;
+        list-style-position: outside;
     }
-
-    .topicDetails>li {
-        padding-left: 2em;
-        font-size: 15px;
-    }
-
 }

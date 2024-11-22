@@ -1,9 +1,10 @@
 import React from "react"
 import "./VerticalCohortSelector.css"
 import { Link } from "react-router-dom"
-import { COHORT_DATE_RANGE_NOVEMBER } from "../Calendar/CalendarData"
-import { COHORT_DATE_RANGE_DECEMBER } from "../Calendar/CalendarData"
-import { COHORT_DATE_RANGE_JANUARY } from "../Calendar/CalendarData"
+
+import { COHORT2_DATE_RANGE } from "../CalendarV2/CalendarDataV2"
+import { COHORT3_DATE_RANGE } from "../CalendarV2/CalendarDataV2"
+import { COHORT4_DATE_RANGE } from "../CalendarV2/CalendarDataV2"
 
 export default function VerticalCohortSelector() {
     return (
@@ -16,10 +17,10 @@ export default function VerticalCohortSelector() {
                 {/* FIRST COHORT START */}
                 <div className="cohort-1">
                     <div className="cohort-paragraphs">
-                        <p><b>{COHORT_DATE_RANGE_NOVEMBER[0].start} - {COHORT_DATE_RANGE_NOVEMBER[0].end}</b></p>
-                        <Link to="/novemberschedule">See Schedule</Link>
+                        <p><b>{COHORT2_DATE_RANGE[0].start} - {COHORT2_DATE_RANGE[0].end}</b></p>
+                        <Link to="/cohort2-schedule">See Schedule</Link>
                     </div>
-                    <button className="btn-shadow">  <Link to="/november" className="cohortSelector-button-link">Join Cohort</Link></button>
+                    <button className="btn-shadow">  <Link to="/cohort2" className="cohortSelector-button-link">Join Cohort</Link></button>
                 </div>
                 {/* FIRST COHORT END */}
 
@@ -27,22 +28,21 @@ export default function VerticalCohortSelector() {
                 {/* SECOND COHORT START */}
                 <div className="cohort-1">
                     <div className="cohort-paragraphs">
-                    <p><b>{COHORT_DATE_RANGE_DECEMBER[0].start} - {COHORT_DATE_RANGE_DECEMBER[0].end}</b></p>
-                        <Link to="/decemberschedule">See Schedule</Link>
+                    <p><b>{COHORT3_DATE_RANGE[0].start} - {COHORT3_DATE_RANGE[0].end}</b></p>
+                        <Link to="/cohort3-schedule">See Schedule</Link>
                     </div>
-                    <button className="btn-shadow">  <Link to="/december" className="cohortSelector-button-link">Join Cohort</Link></button>
+                    <button className="btn-shadow">  <Link to="/cohort3" className="cohortSelector-button-link">Join Cohort</Link></button>
                 </div>
                 {/* SECOND COHORT END */}
-
 
 
                 {/* THIRD COHORT START */}
                 <div className="cohort-1">
                     <div className="cohort-paragraphs">
-                    <p><b>{COHORT_DATE_RANGE_JANUARY[0].start} - {COHORT_DATE_RANGE_JANUARY[0].end}</b></p>
-                        <Link to="/januaryschedule">See Schedule</Link>
+                    <p><b>{COHORT4_DATE_RANGE[0].start} - {COHORT4_DATE_RANGE[0].end}</b></p>
+                        <Link to="/cohort4-schedule">See Schedule</Link>
                     </div>
-                    <button className="btn-shadow">  <Link to="/january" className="cohortSelector-button-link">Join Cohort</Link></button>
+                    <button className="btn-shadow">  <Link to="/cohort4" className="cohortSelector-button-link">Join Cohort</Link></button>
                 </div>
                 {/* THIRD COHORT END */}
 

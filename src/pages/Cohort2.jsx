@@ -10,9 +10,9 @@ import TestComponent from "../components/TestComponent/TestComponent";
 import SpiffyCheckout from "../components/SpiffyCheckout/SpiffyCheckout";
 import Navbar from "../components/Navbar/Navbar";
 
-export default function November() {
+export default function Cohort2() {
     return (
-        <div className="October">
+        <div id="Cohort2">
             <Navbar />
 
             <Header />
@@ -27,7 +27,7 @@ export default function November() {
                 </div>
                 <div className="test-component-content-container">
                     <img src="./images/11.png" alt="Outcome Driven UX Metrics" />
-                    <button className="btn btn-shadow test-component-purchase button cohortSelector-button-link"> <Link to="/novemberschedule" className="cohortSelector-button-link">November Schedule</Link></button>
+                    <button className="btn btn-shadow test-component-purchase button cohortSelector-button-link"> <Link to="/cohort2-schedule" className="cohortSelector-button-link">November Schedule</Link></button>
                 </div>
             </TestComponent >
             <TestComponent>
